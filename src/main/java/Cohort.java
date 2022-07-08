@@ -17,6 +17,10 @@ public class Cohort {
         return avg / this.getStudents().size();
     }
 
+    public Cohort(List<Student> students) {
+        this.students = students;
+    }
+
     public void addStudent(Student student){
         students.add(student);
     }

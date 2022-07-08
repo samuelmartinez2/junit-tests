@@ -1,22 +1,17 @@
-import org.junit.BeforeClass;
+import org.junit.Before;
 import org.junit.Test;
 
 import java.util.ArrayList;
 
 import static org.junit.Assert.*;
 
-public class StudentTest {
+public class CohortTest {
     @Test
     public void testCreateStudent(){
         Student fer = new Student(1L, "fer");
         Student ryan = null;
         assertNull(ryan);
         assertNotNull(fer);
-    }
-
-    @BeforeClass
-    public static void beforeClass() throws Exception {
-
     }
 
     @Test
@@ -35,6 +30,15 @@ public class StudentTest {
         assertSame(100, fer.getGrades().get(0));
         fer.addGrade(80);
         assertSame(80, fer.getGrades().get(1));
+    }
+
+    @Test
+    public void name() {
+    }
+
+    @Before
+    public void setUp() throws Exception {
+
     }
 
     @Test
